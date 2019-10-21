@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 y = y * 12;
 
                 EMICalculator emiCalc = new EMICalculator(p, r, y);
-                tvResult.setText("The monthly installment is: \n Nrs. " + output.format(emiCalc.getEmi()));
+                tvResult.setText("Monthly installment: \n Nrs. " + output.format(emiCalc.getEmi()));
             }
             else
                 showToast();
